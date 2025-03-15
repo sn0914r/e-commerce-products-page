@@ -1,0 +1,37 @@
+:root{
+    --success: #198754;
+    --info: #0dcaf0;
+}
+
+html{
+    font-size: 12px;
+}
+
+@media (min-width: 578px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    html{
+        font-size: 16px;
+    }
+}
+
+header input[type="radio"]{
+    accent-color: var(--success);
+}
+header input[type="radio"]:checked + label{
+    color: var(--success);
+    font-weight: bold;
+}
+
+header .accordion-header{
+    button:not(.collapsed){
+        background-color: var(--info);
+    }
+}
+
+
+.-text-indent{text-indent: 1rem;}
