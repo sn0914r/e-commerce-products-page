@@ -35,3 +35,6 @@ header .accordion-header{
 
 
 .-text-indent{text-indent: 1rem;}
+.-b-remove-focus:focus{
+    box-shadow: none; outline: none;
+}
