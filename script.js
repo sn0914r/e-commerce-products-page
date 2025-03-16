@@ -40,14 +40,14 @@ const cardStructureHOF=()=>{
 
   return function(img, productName, price, ratings, Rcount){
     return (`
-    <section class="col-lg-3 m-3 card shadow rounded-0 p-3" style="max-width: 250px;">
+    <section class="col-md-5 col-lg-4 col-xl-3 card shadow rounded-0 p-3" >
                         
-        <div class="border rounded
-        d-flex align-items-center p-2
-        " style="aspect-ratio: 9/16" >
-          <img class="card-img-top img-fluid" src="${img}" alt="${productName}">
+        <div class="border rounded p-2
+        d-flex justify-content-center align-items-center
+        " style="aspect-ratio: 1/1;">
+          <img style=" aspect-ratio: 1/1" class="card-img-top img-fluid" src="${img}" alt="${productName}">
         </div>
-          <div class="card-body">
+          <div class="card-body" >
                 <a class="text-decoration-none" href="productPage.html">
                     <p class="card-title fw-bold">${productName}</p>
                 </a>
@@ -57,7 +57,7 @@ const cardStructureHOF=()=>{
                         
                       ${stars(ratings).join(' ')}
                         
-                      </span> by <span class="rated-people"> ${Rcount} </span> people
+                      </span> <br/> by <span class="rated-people"> ${Rcount} </span> people
                   </p>
                   <p class="fw-bold"> Price: <span class="product-price">${INR(price)}</span> &#8377 </p>
                   <div class="-card-buttons">
